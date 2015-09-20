@@ -1,17 +1,17 @@
 ![](https://lh3.googleusercontent.com/hgeIZb81OJmQhkUZd5BrFaGrUPSEPLnefczpePlKM-hhZnlssko7xCErCcazP6oIWqJ_FLulZ4sE_HdPppxnu9jr20BiEK95joDMpu9SEg=s660)
 
-**更多内容请访问[hosts wiki](https://github.com/racaljk/hosts/wiki)**
+**更多内容请访问[hosts wiki](https://github.com/hinagiku/hosts/wiki)**
 
 ### Windows
 * 用文本编辑器(如Notepad++|记事本)打开`C:\Windows\System32\drivers\etc`中的hosts文件，  
-把 -> [hosts](https://raw.githubusercontent.com/racaljk/hosts/master/hosts) <- 全部内容复制到hosts文件中，保存后按下述方法令其生效。
+把 -> [hosts](https://raw.githubusercontent.com/hinagiku/hosts/master/hosts) <- 全部内容复制到hosts文件中，保存后按下述方法令其生效。
 <br>**注意：如果遇到无法保存，请右键hosts->属性->安全，然后选择你登陆的用户名，最后点击编辑，勾选"写入"即可。**
 
 ### GNU/Linux
 * Linux 系统终端下命令：  
 使用wget或curl，以wget为例：  
 开启终端(快捷键为"Ctrl + Alt + T")输入`sudo mv /etc/hosts /etc/hosts.bak`之后输入
-<br>`sudo wget -q https://raw.githubusercontent.com/racaljk/hosts/master/hosts -O /etc/hosts`
+<br>`sudo wget -q https://raw.githubusercontent.com/hinagiku/hosts/master/hosts -O /etc/hosts`
 按下述方法令其生效  
 
 ### 修改hosts后生效的方法
@@ -32,7 +32,7 @@
 拔网线(断网) -> 插网线(重新连接网络)  
   
 ### Others
-* 可使用[getHosts.py](https://github.com/racaljk/hosts/blob/master/getHosts.py)进行跨平台的hosts简单配置,简单示例如下
+* 可使用[getHosts.py](https://github.com/hinagiku/hosts/blob/master/getHosts.py)进行跨平台的hosts简单配置,简单示例如下
 ```python
 import getHosts
 h = getHosts.hosts()
@@ -41,4 +41,4 @@ h.getReadMeFile()     #获取README.MD文件
 h.getHostsFile()      #获取hosts文件
                       #更多功能亟待补充
 ```
-* 衷心感谢每位参与开源hosts的用户[https://github.com/racaljk/hosts/graphs/contributors](https://github.com/racaljk/hosts/graphs/contributors)
+* 衷心感谢每位参与开源hosts的用户[https://github.com/hinagiku/hosts/graphs/contributors](https://github.com/hinagiku/hosts/graphs/contributors)
